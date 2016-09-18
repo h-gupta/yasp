@@ -15,6 +15,7 @@ if(ch == 1):
 			print("Enter the full path to the JPEG or TIFF image file")
 			p1=raw_input()
 			secret = exifHeader.hide(p1,"/root/Desktop/out1.jpg",secret_message=f.read().strip())
+			print("File saved as /root/Desktop/out1.jpg")
 
 		if(i == 2):
 			print("Enter the path to the image")
@@ -30,6 +31,7 @@ if(ch == 1):
 			secret_message=f.read().strip()
 			secret_image = lsbset.hide(p3,secret_message,generators.eratosthenes())
 			secret_image.save("/root/Desktop/image.png")
+			print("File saved as /root/Desktop/image.png")
 		
 		if(i1 == 2):
 			print("enter the path of PNG image")
